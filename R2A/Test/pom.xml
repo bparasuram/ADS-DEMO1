@@ -37,6 +37,11 @@
 
 <dependencies>
         <dependency>
+            <groupId>ceadmin.r2a.r2a</groupId>
+            <artifactId>dataModel</artifactId>
+            <version>LATEST-SNAPSHOT</version>
+        </dependency>
+        <dependency>
             <groupId>com.ibm.decision</groupId>
             <artifactId>engine-compact-runtime</artifactId>
         </dependency>
