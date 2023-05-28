@@ -3,6 +3,12 @@
   <name>Test</name>
   <uuid>456bd8ff-a2fb-4fb6-85c9-6bfbb5fff383</uuid>
   <locales>en_US</locales>
+  <operations operationName="R2A_Flow">
+    <operation href="R2A_Flow.dop#d08e4d85-1d4b-4881-b79e-30dcd65df63e"/>
+    <properties key="ruleset.version">
+      <value><![CDATA[1.0]]></value>
+    </properties>
+  </operations>
   <versionPolicies label="Increment minor version numbers" ruleset="INCREMENT_MINOR" default="true" recurrent="true">
     <description><![CDATA[Updates the minor version for each ruleset. Makes the new version available but retains previous versions.]]></description>
   </versionPolicies>

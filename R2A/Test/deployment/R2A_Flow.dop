@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="function" usingRuleflow="true" ruleflowName="Ruleflow1" targetRuleProjectName="Test">
+  <name>R2A_Flow</name>
+  <uuid>d08e4d85-1d4b-4881-b79e-30dcd65df63e</uuid>
+  <description><![CDATA[]]></description>
+  <referencedVariables variableName="input" variableSetName="variables" direction="IN_OUT">
+    <variableSet href="../rules/variables.var#d69cd301-4898-48e3-8a95-74feb0cabeec"/>
+  </referencedVariables>
+  <referencedVariables variableName="final_debit_table" variableSetName="variables" direction="OUT">
+    <variableSet href="../rules/variables.var#d69cd301-4898-48e3-8a95-74feb0cabeec"/>
+  </referencedVariables>
+  <ruleflow href="../rules/Ruleflow1.rfl#bdfad21f-9b9e-4225-859b-bb3332da70f9"/>
+  <targetRuleProject href="../../Test#3fa74932-40f0-47cf-a322-2f8ad465b051"/>
+  <tags key="operationDescription">
+    <value><![CDATA[""]]></value>
+  </tags>
+  <tags key="exposedAtRuntime">
+    <value><![CDATA[true]]></value>
+  </tags>
+  <tags key="operationName">
+    <value><![CDATA["Test-R2A_Flow"]]></value>
+  </tags>
+</com.ibm.rules.studio.model.decisionservice:Operation>

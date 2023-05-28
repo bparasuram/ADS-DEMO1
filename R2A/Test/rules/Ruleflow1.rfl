@@ -6,31 +6,22 @@
   <rfModel><Ruleflow xmlns="http://schemas.ilog.com/Rules/7.0/Ruleflow">
     <Body>
         <TaskList>
-            <StartTask Identifier="task_0"/>
-            <ActionTask Identifier="task_3"/>
             <StopTask Identifier="task_2"/>
-            <RuleTask ExecutionMode="RetePlus" ExitCriteria="None" Identifier="task_4" Ordering="Default"/>
+            <StartTask Identifier="task_4"/>
         </TaskList>
         <NodeList>
-            <TaskNode Identifier="node_0" Task="task_0"/>
-            <TaskNode Identifier="node_5" Task="task_3"/>
             <TaskNode Identifier="node_3" Task="task_2"/>
-            <TaskNode Identifier="node_4" Task="task_4"/>
+            <TaskNode Identifier="node_2" Task="task_4"/>
         </NodeList>
         <TransitionList>
-            <Transition Identifier="transition_1" Source="node_5" Target="node_3"/>
-            <Transition Identifier="transition_2" Source="node_4" Target="node_5"/>
-            <Transition Identifier="transition_4" Source="node_0" Target="node_4"/>
+            <Transition Identifier="transition_0" Source="node_2" Target="node_3"/>
         </TransitionList>
     </Body>
     <Resources>
         <ResourceSet Locale="en_US">
             <Data Name="node_3#label"><![CDATA[End node 1]]></Data>
-            <Data Name="node_0#name"><![CDATA[Start node]]></Data>
-            <Data Name="node_4#label"><![CDATA[Rule task 1]]></Data>
-            <Data Name="node_5#name"><![CDATA[Action task 1]]></Data>
-            <Data Name="node_5#label"><![CDATA[Action task 1]]></Data>
-            <Data Name="node_4#name"><![CDATA[Rule task 1]]></Data>
+            <Data Name="node_2#name"><![CDATA[Start node 1]]></Data>
+            <Data Name="node_2#label"><![CDATA[Start node 1]]></Data>
             <Data Name="node_3#name"><![CDATA[End node 1]]></Data>
         </ResourceSet>
     </Resources>
