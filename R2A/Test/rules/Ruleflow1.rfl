@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.ruleflow:RuleFlow xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.ruleflow="http://ilog.rules.studio/model/ruleflow.ecore">
+  <name>Ruleflow1</name>
+  <uuid>bdfad21f-9b9e-4225-859b-bb3332da70f9</uuid>
+  <locale>en_US</locale>
+  <rfModel><Ruleflow xmlns="http://schemas.ilog.com/Rules/7.0/Ruleflow">
+    <Body>
+        <TaskList>
+            <StartTask Identifier="task_0"/>
+            <ActionTask Identifier="task_3"/>
+            <StopTask Identifier="task_2"/>
+            <RuleTask ExecutionMode="RetePlus" ExitCriteria="None" Identifier="task_4" Ordering="Default"/>
+        </TaskList>
+        <NodeList>
+            <TaskNode Identifier="node_0" Task="task_0"/>
+            <TaskNode Identifier="node_5" Task="task_3"/>
+            <TaskNode Identifier="node_3" Task="task_2"/>
+            <TaskNode Identifier="node_4" Task="task_4"/>
+        </NodeList>
+        <TransitionList>
+            <Transition Identifier="transition_1" Source="node_5" Target="node_3"/>
+            <Transition Identifier="transition_2" Source="node_4" Target="node_5"/>
+            <Transition Identifier="transition_4" Source="node_0" Target="node_4"/>
+        </TransitionList>
+    </Body>
+    <Resources>
+        <ResourceSet Locale="en_US">
+            <Data Name="node_3#label"><![CDATA[End node 1]]></Data>
+            <Data Name="node_0#name"><![CDATA[Start node]]></Data>
+            <Data Name="node_4#label"><![CDATA[Rule task 1]]></Data>
+            <Data Name="node_5#name"><![CDATA[Action task 1]]></Data>
+            <Data Name="node_5#label"><![CDATA[Action task 1]]></Data>
+            <Data Name="node_4#name"><![CDATA[Rule task 1]]></Data>
+            <Data Name="node_3#name"><![CDATA[End node 1]]></Data>
+        </ResourceSet>
+    </Resources>
+</Ruleflow>
+</rfModel>
+</ilog.rules.studio.model.ruleflow:RuleFlow>

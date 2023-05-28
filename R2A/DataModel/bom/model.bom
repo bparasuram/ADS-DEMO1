@@ -1,0 +1,85 @@
+
+package ceadmin.r2a.r2a.datamodel;
+
+
+public class CTY
+        extends java.lang.Enum
+        property "ads.typeId" "3"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "CTY"
+        property "com.ibm.rules.domainProvider.msexcel.b2xColumn" "0"
+        property "com.ibm.rules.domainProvider.msexcel.documentationColumn.en_US" "2"
+        property "com.ibm.rules.domainProvider.msexcel.hasHeader" "true"
+        property "com.ibm.rules.domainProvider.msexcel.labelColumn.en_US" "1"
+        property "com.ibm.rules.domainProvider.msexcel.sheetIndex" "0"
+        property "com.ibm.rules.domainProvider.msexcel.valueColumn" "0"
+        property "de.generated" "true"
+        property domainProviderResource "domains/dynamicDomainTemplate.xlsx"
+{
+    domain {static AE, static IN, static JP, static newEnumValue}
+    public static final readonly ceadmin.r2a.r2a.datamodel.CTY AE
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AE";
+    public static final readonly ceadmin.r2a.r2a.datamodel.CTY IN
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IN";
+    public static final readonly ceadmin.r2a.r2a.datamodel.CTY JP
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "JP";
+    public static final readonly ceadmin.r2a.r2a.datamodel.CTY newEnumValue
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "newEnumValue"
+                property deprecated "true";
+}
+
+public class FINAL_DEBIT_TABLE
+        property "ads.typeId" "4"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "FINAL_DEBIT_TABLE"
+        property "de.generated" "true"
+{
+    public string BRAND
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BRAND"
+                property update "true";
+    public string CTY
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CTY"
+                property update "true";
+    public string RECV_CTY
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "RECV_CTY"
+                property update "true";
+    public FINAL_DEBIT_TABLE(string BRAND, string CTY, string RECV_CTY)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public FINAL_DEBIT_TABLE()
+                property "dataio.default" "true";
+}
+
+public class INPUT
+        property "ads.typeId" "1"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "INPUT"
+        property "de.generated" "true"
+{
+    public string BRAND
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BRAND"
+                property update "true";
+    public ceadmin.r2a.r2a.datamodel.CTY CTY
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CTY"
+                property update "true";
+    public string RECV_CTY
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "RECV_CTY"
+                property update "true";
+    public INPUT(string BRAND, ceadmin.r2a.r2a.datamodel.CTY CTY, string RECV_CTY)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public INPUT()
+                property "dataio.default" "true";
+}
+

@@ -1,0 +1,31 @@
+
+# ceadmin.r2a.r2a.datamodel.CTY
+ceadmin.r2a.r2a.datamodel.CTY#concept.label = CTY
+ceadmin.r2a.r2a.datamodel.CTY.AE#instance.documentation = UAE
+ceadmin.r2a.r2a.datamodel.CTY.AE#instance.label = UAE
+ceadmin.r2a.r2a.datamodel.CTY.IN#instance.documentation = India
+ceadmin.r2a.r2a.datamodel.CTY.IN#instance.label = India
+ceadmin.r2a.r2a.datamodel.CTY.JP#instance.documentation = Japan
+ceadmin.r2a.r2a.datamodel.CTY.JP#instance.label = Japan
+ceadmin.r2a.r2a.datamodel.CTY.newEnumValue#instance.label = new enum value
+
+# ceadmin.r2a.r2a.datamodel.FINAL_DEBIT_TABLE
+ceadmin.r2a.r2a.datamodel.FINAL_DEBIT_TABLE#concept.label = FINAL_DEBIT_TABLE
+ceadmin.r2a.r2a.datamodel.FINAL_DEBIT_TABLE.BRAND#phrase.action = set the BRAND of {this} to {BRAND}
+ceadmin.r2a.r2a.datamodel.FINAL_DEBIT_TABLE.BRAND#phrase.navigation = {BRAND} of {this}
+ceadmin.r2a.r2a.datamodel.FINAL_DEBIT_TABLE.CTY#phrase.action = set the CTY of {this} to {CTY}
+ceadmin.r2a.r2a.datamodel.FINAL_DEBIT_TABLE.CTY#phrase.navigation = {CTY} of {this}
+ceadmin.r2a.r2a.datamodel.FINAL_DEBIT_TABLE.FINAL_DEBIT_TABLE(java.lang.String,java.lang.String,java.lang.String)#phrase.navigation = a new {FINAL_DEBIT_TABLE} where {0, BRAND} {1, CTY} {2, RECV_CTY}
+ceadmin.r2a.r2a.datamodel.FINAL_DEBIT_TABLE.RECV_CTY#phrase.action = set the RECV_CTY of {this} to {RECV_CTY}
+ceadmin.r2a.r2a.datamodel.FINAL_DEBIT_TABLE.RECV_CTY#phrase.navigation = {RECV_CTY} of {this}
+
+# ceadmin.r2a.r2a.datamodel.INPUT
+ceadmin.r2a.r2a.datamodel.INPUT#concept.label = INPUT
+ceadmin.r2a.r2a.datamodel.INPUT.BRAND#phrase.action = set the BRAND of {this} to {BRAND}
+ceadmin.r2a.r2a.datamodel.INPUT.BRAND#phrase.navigation = {BRAND} of {this}
+ceadmin.r2a.r2a.datamodel.INPUT.CTY#phrase.action = set the CTY of {this} to {CTY}
+ceadmin.r2a.r2a.datamodel.INPUT.CTY#phrase.clearer = clear the CTY of {this}
+ceadmin.r2a.r2a.datamodel.INPUT.CTY#phrase.navigation = {CTY} of {this}
+ceadmin.r2a.r2a.datamodel.INPUT.INPUT(java.lang.String,ceadmin.r2a.r2a.datamodel.CTY,java.lang.String)#phrase.navigation = a new {INPUT} where {0, BRAND} {1, CTY} {2, RECV_CTY}
+ceadmin.r2a.r2a.datamodel.INPUT.RECV_CTY#phrase.action = set the RECV_CTY of {this} to {RECV_CTY}
+ceadmin.r2a.r2a.datamodel.INPUT.RECV_CTY#phrase.navigation = {RECV_CTY} of {this}
